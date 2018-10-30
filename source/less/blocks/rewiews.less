@@ -1,0 +1,108 @@
+.rewiews {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }  
+}
+
+.rewiews__wrapper {
+  padding: 0 20px;
+  padding-bottom: 43px;
+  
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+  
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+     
+    background-image: url(../img/bg-quotes.svg);
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+  }
+}
+
+.rewiews__list {
+  padding-bottom: 30px;
+  
+  @media (min-width: @desktop-width) {
+    padding-bottom: 7px;
+  }  
+}
+
+.rewiews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.rewiews__text {
+  margin: 0;
+  
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  
+  @media (min-width: @tablet-width) {    
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 186px;
+    padding-right: 125px;
+    padding-bottom: 37px;
+    padding-left: 125px;
+  }
+}
+
+.rewiews__author {
+  order: -1;
+  padding-top: 43px;
+  padding-bottom: 11px;
+  
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  
+  @media (min-width: @tablet-width) {
+    order: 0;
+    padding-top: 35px;
+    padding-bottom: 2px;
+    
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    
+    font-size: 24px;
+  }
+}
+
+.rewiews__about {
+  display: none; 
+
+  @media (min-width: @tablet-width) {
+    display: block; 
+    margin: 0;
+    
+    font-size: 14px;
+    line-height: 30px;   
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding-bottom: 8px;    
+  }  
+}
+
+.rewiews__button {
+  display: none;
+  
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

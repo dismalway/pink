@@ -1,0 +1,167 @@
+.intro-header {
+  &--index {
+    width: 320px;
+    min-height: 462px; 
+    margin-top: -68px;
+    margin-right: auto;
+    margin-left: auto; 
+      
+    background-image: url(../img/iphone-hand-mobile@1x.png);
+    background-position: left bottom;
+    background-repeat: no-repeat; 
+    background-size: 258px auto;
+    
+    @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+      background-image: url(../img/iphone-hand-mobile@2x.png);
+    }
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+      min-height: 729px;
+      margin-top: -111px;
+      
+      background-image: url(../img/iphone-hand-tablet@1x.png);
+      background-position: -20px bottom;
+      background-repeat: no-repeat;
+      background-size: 700px auto;
+      
+      @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+        background-image: url(../img/iphone-hand-tablet@2x.png);
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 853px;
+      margin-top: -111px;
+      
+      background-image: url(../img/iphone-hand-desktop@1x.png);
+      background-position: 30px bottom;
+      background-size: 1050px auto;
+      
+      @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+        background-image: url(../img/iphone-hand-desktop@2x.png);
+      }
+    }
+  }
+  
+  &--photo {
+    width: 320px;
+    min-height: 237px; 
+    margin-top: -68px;
+    margin-right: auto;
+    margin-left: auto; 
+    
+    @media (min-width: @tablet-width) {
+      width: auto;
+      min-height: 440px;
+      margin-top: -111px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 394px;
+    }
+  }
+  
+  &--form {
+    width: 320px;
+    min-height: 237px; 
+    margin-top: -68px;
+    margin-right: auto;
+    margin-left: auto; 
+    
+    @media (min-width: @tablet-width) {
+      width: auto;
+      min-height: 440px;
+      margin-top: -111px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 394px;
+    }
+  }
+}
+
+.intro-header__wrapper {
+  padding: 0 20px;
+  
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+.intro-header__title {
+  margin: 0;
+  
+  font-weight: 300;
+  text-align: center;
+  color: @white;
+  
+  &--index {
+    display: none;
+    
+    @media (min-width: @tablet-width) {
+      display: block;
+      width: 186px;
+      padding-top: 200px;
+      padding-bottom: 30px;
+      padding-left: 57px;
+      
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 235px;
+      padding-top: 219px;
+      padding-bottom: 51px;
+      padding-left: 30px;
+      
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  
+  &--photo {
+    padding-top: 97px;
+    
+    font-size: 24px;
+    
+    @media (min-width: @tablet-width) {
+      padding-top: 181px;
+      padding-right: 40px; 
+      padding-left: 40px;
+      
+      font-size: 50px;
+      line-height: 60px;
+    }
+    
+    @media (min-width: @desktop-width) {
+      padding-top: 175px;
+      padding-right: 150px;
+      padding-left: 150px;
+    }
+  }
+  
+  &--form {
+    padding-top: 97px;
+    
+    font-size: 24px;
+    
+    @media (min-width: @tablet-width) {
+      padding-top: 181px;
+      padding-right: 40px; 
+      padding-left: 40px;
+      
+      font-size: 50px;
+      line-height: 60px;
+    }
+    
+    @media (min-width: @desktop-width) {
+      padding-top: 175px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}

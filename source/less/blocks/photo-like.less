@@ -1,0 +1,39 @@
+.photo-like {
+  display: flex;
+  width: 100%;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @pink;
+  
+  @media (min-width: @tablet-width) {   
+    justify-content: space-between;
+    
+    &--panorama {
+      justify-content: flex-end;
+      flex-grow: 1;
+      width: auto;
+      padding-top: 0;
+    }
+  }
+}
+
+.photo-like__link {
+  @media (min-width: @tablet-width) {   
+    order: 1;
+  }
+}
+
+.photo-like__text {
+  padding-left: 19px;
+  
+  @media (min-width: @tablet-width) {   
+    padding-left: 0;
+    
+    &--panorama {
+      padding-right: 19px;
+    }
+  }
+}

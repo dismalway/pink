@@ -1,0 +1,107 @@
+.photo__block {
+  display: flex;
+  flex-direction: column;
+  margin-top: -21px;
+  
+  @media (min-width: @tablet-width) {   
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  @media (min-width: @desktop-width) {   
+    margin-top: -54px;
+  }
+}
+
+.photo__wrapper {
+  max-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px; 
+  
+   @media (min-width: @tablet-width) {
+    max-width: 620px;
+   }
+  
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    padding: 0 10px;
+  }
+}
+
+.photo__item {  
+  position: relative;
+  overflow: hidden;
+       
+  &--panorama {
+    width: auto;
+    margin-bottom: 21px;
+    
+    .photo__image img {
+      width: 100%;
+      
+      @media (min-width: @tablet-width) {
+        min-width: 700px;
+      }
+      
+      @media (min-width: @desktop-width) {
+        min-width: 1200px;
+      }
+    }
+    
+    &::before {
+      content: "Панорама дня";
+    
+      position: absolute;
+      top: 0;
+      right: 20px;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      height: 36px;
+      
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: @white;
+      
+      background-color: @pink;
+      
+      @media (min-width: @tablet-width) {   
+        top: 57px;
+      }
+      
+      @media (min-width: @desktop-width) {   
+        top: 54px;
+      }
+    }
+    
+    @media (min-width: @tablet-width) {   
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.photo__block .photo__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 21px;
+  
+  @media (min-width: @tablet-width) { 
+    width: 300px;
+  }
+  
+  @media (min-width: @desktop-width) { 
+    margin-top: 54px;
+  }
+}
+
+.photo__image {
+  display: block;
+  
+  line-height: 0;
+}

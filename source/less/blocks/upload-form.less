@@ -1,0 +1,152 @@
+.upload-form { 
+  background-color: @light-gray;
+}
+
+.upload-form__wrapper {
+  display: flex;
+  flex-direction: column;
+    
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+    padding: 0 10px;
+  }
+}
+
+.upload-form__image {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  
+  line-height: 0;
+  
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 57px 20px 54px 0;
+  }
+  
+  @media (min-width: @desktop-width) {
+    padding: 57px 90px 54px 0;
+  }
+}
+
+.upload-form__tools {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-form__controls {
+  position: relative;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 42px;
+
+  text-align: center;
+  
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.upload-form__icon {
+  fill: #b5b9be;
+  
+  &:hover {
+    fill: #8d949b;
+  }
+}
+
+.upload-form__buttons {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 41px;
+  
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    padding: 67px 13px 0 27px;
+  }
+  
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 410px;
+    padding: 0;
+    padding-top: 147px;
+  }
+}
+
+.upload-form__button {
+  width: 100%;
+  padding: 15px 35px;
+  
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @pink;
+  
+  background-color: transparent;
+  border: 3px solid @pink;
+  border-radius: 50px;
+  outline: 0;
+  cursor: pointer;
+  
+  &--submit {
+    &:hover {
+      color: @white;
+      
+      background-color: @pink;
+    }
+    
+    &:active {
+      color: rgba(255, 255, 255, .3);
+    }
+  }
+  
+  &--cancel {
+    margin-top: 12px;
+    
+    color: rgba(181, 185, 190, .2);
+    
+    border: 3px solid #dddfe0;
+    
+    &:hover {
+      color: rgba(181, 185, 190, .4);
+      
+      border-color: #b5b9be;
+    }
+    
+    &:active {
+      color: rgba(255, 255, 255, .4);
+      
+      border-color: #b5b9be;
+      background-color: #b5b9be;
+    }
+    
+    
+    
+    @media (min-width: @tablet-width) {
+      margin-top: 24px;
+    }
+    
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+    }
+  }
+  
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
+}
